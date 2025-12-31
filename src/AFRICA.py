@@ -27,7 +27,7 @@ def getAfricaJsonData():
     for feature in json_data["features"]:
         properties = feature["properties"]
 
-        if properties.get("adm0_a3") == "SDS":  # I HATE SOUTH SUDAN
+        if properties.get("adm0_a3") == "SDS": 
             properties["adm0_a3"] = "SSD"
 
         if ("adm0_a3" in properties and "name" in properties 
